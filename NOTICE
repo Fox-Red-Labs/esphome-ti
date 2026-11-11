@@ -1,0 +1,15 @@
+Texas Instruments material
+
+Nothing from Texas Instruments is copied into this repository except two SysConfig configuration files
+(components/cc27xx/ti/*.syscfg) adapted from the Zigbee on/off light example in the SimpleLink Low Power F3 SDK. They keep
+TI's BSD-3-Clause header. The build reads the rest of TI's code (SDK, drivers, FreeRTOS, ZBOSS, Wi-Fi stack) from the TI SDKs
+you install yourself, under their own licences; check each one before you pass on a firmware image built with it.
+components/cc35xx/ti/frl_wifi_append.c is appended at build time to a copy of TI's wifi_if.c from the Wi-Fi SDK.
+
+ESPHome
+
+These components are written against ESPHome and keep its file and class names where the generated code needs them. The pin
+tables in components/cc27xx/pindata.json come from TI's board description and SysConfig device data.
+
+"Texas Instruments", "SimpleLink", "LaunchPad" and "BoosterPack" are marks of Texas Instruments. This is not a TI product and
+TI has not endorsed it.
